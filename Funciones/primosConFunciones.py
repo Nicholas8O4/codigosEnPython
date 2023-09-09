@@ -22,6 +22,3 @@ Lim_inferior = int(input(print("Ingrese el primer numero del rango: ")))
 Lim_sup = int(input(print("Ingrese el segundo numero del rango: ")))
 numeros = identificacacion(Lim_inferior,Lim_sup)
 print(numeros)
-#fin = time.time()
-
-#Falta el factorial, dividirlo en funciones. 
