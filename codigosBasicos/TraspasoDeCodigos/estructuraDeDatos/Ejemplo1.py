@@ -8,18 +8,23 @@ print("Tamaño de la lista", len(miLista))
 print(miLista[0:2])
 print(miLista[:2])
 
+#agrega al final directamente
 miLista.append('Blanco')
 print(miLista)
 
+#agrega los elementos de otro vector a el mismo
 miLista.extend(['Cafe', 'Rosado'])
 print(miLista)
 
+#Busca el elemento cafe y lo elimina
 miLista.remove('Cafe')
 print(miLista)
 
-miLista.insert(8 , 'Cafe')
+#Agrega un elemento en una posicion especifica de la lista
+miLista.insert(5 , 'Cafe')
 print(miLista)
 
+#Nos devuelve un elemnto aleatorio de la lista
 print("Elemento: ", miLista.pop())
 size = len(miLista)
 print("tamaño = ", size)
@@ -42,35 +47,3 @@ print(NumList)
 print("Odenando la lista de menor a mayor: ")
 NumList.sort(reverse = True)
 print(NumList)
-
-
-print()
-print("Tuplas")
-
-Tupla = tuple(miLista)
-print()
-print("mi tupla", Tupla)
-
-#Evaluar si un elemento está contenido en la tupla (Devuelve un valor booleano)
-print("Rojo" in Tupla)
-print(Tupla.count('Rojo'))
-
-TuplaUnitaria = ('Blanco')
-print(TuplaUnitaria)
-
-Tupla = 'pepe',5,5,2023
-print(Tupla)
-
-#Desempaquetado de tupla, se guardan los valores en orden de las variables
-nombre, dia, mes, año = Tupla
-print(nombre)
-print(dia)
-print(mes)
-print(año)
-
-print("Nombre: ", nombre, " - Dia:", dia, " - Mes: ", mes, "- Año: ", año)
-
-
-#Convertir una tupla en una lista
-Lista2=list(Tupla)
-print(Lista2)
